@@ -1,0 +1,201 @@
+*{
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.bck-img{
+    background-color: rgb(34, 34, 34);
+    background-image: url(/img/dark.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 2560px;
+    height: 800px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .nav{
+    font-size: 25px;
+  }
+  
+  
+  .nav > a {
+    margin-right: 40px;
+    color: white;
+  
+    transition: all 150ms ease-in-out;
+  }
+  .nav > a:last-child {
+    margin-right: 0;
+  }
+  
+  .nav > a:hover {
+    color: rgb(179, 179, 179);
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: rgb(212, 33, 9);
+    transition: all 150ms ease-in-out;
+  }
+  .logo:hover {
+    color: rgb(179, 179, 179);
+  }
+  
+  .header-background {
+    backdrop-filter: blur(6px);
+    height: 80px;
+  }
+
+
+  
+  @media screen and (max-width: 767px) {
+    .header,
+    .header-background {
+      display: none;
+    }
+  }
+  
+  /* mob version  */
+  
+  .mob-open,
+  .mob-close {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .mob-open {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+  }
+  
+  .mob-list {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    right: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  
+    background-color: #2d2d2d;
+  }
+  
+  .mob-list__item {
+    color: white;
+  }
+  
+  .mob-list__item:first-child {
+    margin-bottom: 40px;
+  }
+  
+  .mob-close {
+    position: fixed;
+    right: 30px;
+    top: 15px;
+    z-index: 5;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mob-menu {
+      display: none;
+    }
+  }
+  
+  /* js */
+  
+  .opened {
+    opacity: 1;
+    animation: openAnim 200ms ease-in-out;
+  }
+  
+  .close {
+    opacity: 0;
+    animation: closeAnim 200ms ease-in-out;
+  }
+  
+  /* animation  */
+  
+  @keyframes openAnim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes closeAnim {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.firstsection{
+    height: 88.5vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.fhalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shalf{
+    width: 30%;
+}
+
+.shalf img{
+    width: 80%;
+    border: 3   px solid white;
+    border-radius: 100px;    
+    display: block;
+    margin: auto;
+}
+
+.about{
+    font-size: 40px;
+}
+
+.about2{
+    font-size: 18px;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+}
+.main-content {
+  text-align: center;
+  padding: 50px;
+  color: aliceblue;
+}
